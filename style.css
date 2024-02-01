@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    
+}
+
+
+/* Header  */
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(purple,orangered);
+    width: 100vw;
+    height: 20vh;
+}
+
+.cabecalho .cabecalho-interno {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.cabecalho-interno .titulo {
+    text-align: center;
+    align-self: center;
+    font-size: 40px;
+    color: white;
+}
+
+.cabecalho-interno>.marca-maldicao,
+.selo-naruto {
+    animation: rotate 2s linear infinite;
+}
+
+/* Animação para rotacionar elementos  */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+
+}
+
+/* User Perfil  */
+
+.perfil-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.perfil-usuario .perfil-card {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    gap: 10px;
+    border:3px rgb(148, 148, 148) solid; 
+}
+
+.perfil-card .imagem-usuario {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border:3px rgb(148, 148, 148) solid; 
+}
+
+.perfil-card .nome-usuario {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* Conteúdo Principal */
+
+.animes {
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.animes .meus-animes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 20px;
+}
+
+/* Cartões  */
+
+.meus-animes .animes-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    border:3px rgb(148, 148, 148) solid; 
+}
+
+.animes-card .imagens-animes {
+    width: 230px;
+    height: 280px;
+    position: absolute;
+    top: 20px;
+    border:3px rgb(148, 148, 148) solid; 
+}
+
+.animes-card .box-descricao {
+    position: absolute;
+    top: 320px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 230px;
+}
+
+.box-descricao .descricao {
+    justify-content: space-around;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    cursor: default;
+}
+
+.box-descricao .descricao:nth-child(n+2) {
+    margin-top: 7px;
+    font-weight: 400;
+}
